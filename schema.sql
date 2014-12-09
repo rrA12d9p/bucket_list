@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS items;
+DROP TABLE IF EXISTS comments;
+
+CREATE TABLE items (
+	id SERIAL PRIMARY KEY,
+	title VARCHAR(100) NOT NULL,
+	description TEXT NOT NULL,
+	complete BOOLEAN
+);
+
+CREATE TABLE comments (
+	id SERIAL PRIMARY KEY,
+	body TEXT NOT NULL,
+	item_id INTEGER NOT NULL
+)

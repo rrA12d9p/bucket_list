@@ -1,0 +1,164 @@
+html, body {
+	background-image: url("/img/bg.png");
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: "Avenir";
+	min-width: 600px;
+}
+
+hr {
+	width: 60%;
+}
+
+hr.style-seven {
+    height: 30px;
+    border-style: solid;
+    margin-bottom: -31px;
+    border-color: darkblue;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin: -31px auto;  
+    border-style: solid;
+    border-color: darkblue;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+#description-p {
+	margin-top: 0;
+}
+
+.main-wrapper {
+	position: relative;
+	background-color: white;
+	margin: 0 auto;
+	width: 60%;
+	/*height: 100%;*/
+	overflow: visible;
+	border-left: thick solid darkblue;
+	border-right: thick solid darkblue;
+	padding-top: 35px;
+	display: block;
+}
+
+h1 {
+	font-size: 42px;
+	margin-top: 0;
+	padding-bottom: 0;
+	padding-top: 15px;
+	color: darkblue;
+}
+
+h2 {
+	margin-bottom: 5px;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+table {
+	color: darkblue;
+}
+
+legend {
+	margin: 0 auto;
+}
+
+input,
+textarea{
+	padding: 5px;
+	width: 60%;
+	border: 1px solid lightgray;
+	margin: 10px auto;
+	display: block;
+	resize: none;
+	color: darkblue;
+	font-size: 20px;
+}
+
+textarea[name="comment"] {
+	margin: 35px auto;
+	height: 100px;
+}
+
+
+input[name="title"] {
+	height: 60px;
+}
+
+ul {
+	padding: 0px;
+	padding-left: 7px;
+}
+
+input[type="checkbox"] {
+	display: inline;
+	width: 20px;
+	height: auto;
+}
+
+footer {
+	height: 200px;
+}
+
+textarea[name="description"] {
+	margin-top: 25px;
+	padding-top: 15px;
+	line-height: 1;
+	vertical-align: text-middle;
+	height: 180px;
+}
+
+sup {
+	font-size: 14px;
+	color: darkblue;
+}
+
+input[placeholder], textarea[placeholder]{
+  text-align: center;
+  vertical-align: text-middle;
+  color: darkblue;
+}
+
+input[type=submit] {
+	height: auto;
+	width: 30%;
+	margin: 35px auto;
+	padding: 20px;
+	text-align: center;
+  vertical-align: middle;
+  background-color: darkblue;
+  color: white;
+}
+
+table {
+	padding: 20px 7px;
+}
+
+td {
+	font-size: 25px;
+}
+
+ul li{
+	padding: 0px;
+	margin: 0;
+	text-align: center;
+	line-height: 5px;
+	list-style-type: none;
+}
+
+tr:nth-child(odd)	{ color: darkblue; }
+tr:nth-child(even) { color: #333333; }
+
+ul:nth-child(odd)	{ color: darkblue; }
+ul:nth-child(even) { color: #333333; }

@@ -1,0 +1,26 @@
+<form action="/" method="post">
+	<input type="text" placeholder="Title" name="title">
+
+	<legend></legend>	
+
+	<textarea placeholder="Description" name="description"></textarea>
+
+	<legend></legend>	
+
+	<input type="submit">
+
+</form>
+
+<hr class="style-seven">
+<table width="100%">
+	<% @items.each do |item| %>
+		<tr>
+		<% if item.complete %>
+			<td><s><a href="/item/<%= item.id %>"><%= item.title %></a></s><a href="/item/<%= item.id %>/delete"><sup> [-]</sup></a></td>
+		<% else %>
+			<td><a href="/item/<%= item.id %>"><%= item.title %></a><a href="/item/<%= item.id %>/delete"><sup> [-]</sup></a></td>
+		<% end %>
+		</tr>
+	<% end %>
+</table>
+<hr class="style-seven">

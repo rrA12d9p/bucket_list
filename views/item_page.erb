@@ -1,0 +1,21 @@
+<form action="/item/update/<%= @id %>" method="post">
+<hr class="style-seven">
+<h2> <input type="checkbox" name="complete_cb" value="checked" <%= @item.complete ? "checked" : "" %> > <%= @title %>  <a href="/item/<%= @id %>/edit/"><sup> [edit]</sup></a>  </h2>
+
+<p id="description-p"><%= @description %></p>
+<hr class="style-seven">
+	
+	<h3>Comments</h3>
+
+	<p><%= @item.comments.length == 0 ? "No comments yet :(" : "" %></p>
+
+	<% @item.comments.each do |comment| %>
+		<ul>
+			<li><%= comment.body %><a href="/item/<%= @id %>/comment/<%= comment.id %>/delete"><sup> [-]</sup></a></li>
+		</ul>
+	<% end %>
+
+	<textarea placeholder="Comment" name="comment"></textarea>
+
+	<input type="submit" value="Update">
+</form>

@@ -1,0 +1,12 @@
+<form action="/item/<%= @item_id %>/edit" method="post">
+	<input type="text" placeholder="Title" value="<%= @title %>" name="title">
+
+	<legend></legend>	
+
+	<textarea placeholder="Description" name="description"><%= @description %></textarea>
+
+	<legend></legend>	
+
+	<input type="submit">
+
+</form>
